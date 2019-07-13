@@ -1,12 +1,12 @@
 class Doctor {
- void Details() {
+ void Doctor_details() {
   System.out.println("Doctor Details...");
  }
 }
 
 class Surgeon extends Doctor {
- void Details() {
-	super.Details();
+ void Surgeon_details() {
+	
   System.out.println("Surgen Detail...");
  }
 }
@@ -14,7 +14,8 @@ class Surgeon extends Doctor {
 public class Inheritance {
  public static void main(String args[]) {
   Surgeon s = new Surgeon();
-  s.Details();
+  s.Doctor_details();
+  s.Surgeon_details();
   
  }
 }
